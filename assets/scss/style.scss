@@ -16,6 +16,7 @@ span.section-subtitle {
 
 .section-title {
     font-size: 56px;
+    letter-spacing: -1.25px;
 
     @media #{$xxl} {
         font-size: 52px;
@@ -621,5 +622,189 @@ span.section-subtitle {
 
     .text {
         margin-top: 10px;
+    }
+}
+
+/* about area style  */
+.about-area {
+    .section-title {
+        max-width: 810px;
+
+        @media #{$lg} {
+            max-width: 610px;
+        }
+    }
+
+    .section-header {
+        .title-wrapper {
+            margin-top: 10px;
+        }
+    }
+
+    .section-content {
+        margin-top: 50px;
+        display: grid;
+        gap: 20px 60px;
+        grid-template-columns: auto 635px;
+        align-items: center;
+
+        @media #{$xl} {
+            grid-template-columns: auto 500px;
+            margin-top: 30px;
+        }
+
+        @media #{$lg} {
+            grid-template-columns: auto 430px;
+            align-items: flex-start;
+        }
+
+        @media #{$md} {
+            grid-template-columns: auto;
+        }
+
+        .thumb {
+            max-width: 585px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid var(--primary);
+            filter: drop-shadow(0px 2px 0px var(--primary));
+        }
+
+        .feature-list {
+            margin-top: 22px;
+
+            li {
+                font-size: 18px;
+                color: var(--primary);
+                font-weight: 500;
+                font-family: var(--font_spacegrotesk);
+                display: flex;
+                gap: 15px;
+                line-height: 1.77;
+
+                &:not(:first-child) {
+                    margin-top: 18px;
+
+                    @media #{$xxl} {
+                        margin-top: 8px;
+                    }
+                }
+
+                i {
+                    font-size: 14px;
+                    color: var(--action);
+                    margin-top: 9px;
+                }
+            }
+        }
+
+
+
+        .btn-wrapper {
+            margin-top: 32px;
+        }
+    }
+}
+
+/* counter area style  */
+.counter-area {
+
+    .counter-wrapper {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(4, 1fr);
+
+        @media #{$md} {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media #{$xs} {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .counter-box {
+        background-color: var(--bg);
+        padding: 20px 20px;
+        border: 1px solid var(--primary);
+        filter: drop-shadow(0px 2px 0px var(--primary));
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .icon {
+            width: 86px;
+            height: 86px;
+            min-width: 86px;
+            background-color: var(--action);
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+            @media #{$xl} {
+                width: 66px;
+                height: 66px;
+                min-width: 66px;
+            }
+
+            img {
+                max-height: 45px;
+
+                @media #{$xl} {
+                    max-width: 35px;
+                }
+            }
+        }
+
+        .number {
+            font-size: 62px;
+
+            @media #{$xl} {
+                font-size: 42px;
+            }
+        }
+
+        .text {
+            font-size: 18px;
+            line-height: 1.4;
+
+            @media #{$xl} {
+                font-size: 16px;
+            }
+        }
+
+        .content {
+            display: grid;
+            gap: 0px 10px;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+
+            @media #{$xl} {
+                grid-template-columns: auto;
+            }
+        }
+    }
+
+}
+
+/* project area style  */
+.project-area {
+    .section-title {
+        max-width: 620px;
+        margin-inline: auto;
+
+        @media #{$lg} {
+            max-width: 520px;
+        }
+    }
+
+    .section-header {
+        text-align: center;
+
+        .title-wrapper {
+            margin-top: 10px;
+        }
     }
 }

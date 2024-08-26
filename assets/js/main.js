@@ -165,7 +165,7 @@
       threshold: 1
     })
 
-    const els = document.querySelectorAll('.wc-counter');
+    const els = document.querySelectorAll('.t-counter');
     els.forEach((el) => {
       IO.observe(el)
     });

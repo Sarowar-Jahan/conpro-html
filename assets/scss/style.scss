@@ -2887,3 +2887,112 @@ span.section-subtitle {
         }
     }
 }
+
+/* contact area style  */
+.contact-area {
+    .contact-formwrap {
+        display: grid;
+        gap: 20px 30px;
+        grid-template-columns: repeat(2, 1fr);
+
+        @media #{$sm} {
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+
+        .messages,
+        .name {
+            grid-column: span 2;
+
+            @media #{$sm} {
+                grid-column: auto;
+            }
+        }
+    }
+
+    .contact-formfield {
+
+        input,
+        textarea {
+            font-size: 16px;
+            line-height: 2;
+            width: 100%;
+            padding: 13px 20px;
+            border: 1px solid #CCCCCC;
+            border-radius: 20px;
+            outline: none;
+            background-color: var(--white);
+            transition: all 0.5s;
+            resize: none;
+
+            &:focus {
+                border-color: var(--primary);
+            }
+
+            &::placeholder {
+                color: var(--primary);
+            }
+        }
+
+        textarea {
+            height: 175px;
+        }
+    }
+
+    .submit-btn {
+        margin-top: 20px;
+    }
+
+    .contact-box {
+        border: 1px solid var(--primary);
+        border-radius: 20px;
+        padding: 60px 54px;
+        background-color: var(--bg);
+        display: grid;
+        gap: 40px 50px;
+        grid-template-columns: 1fr 500px;
+        align-items: flex-start;
+        filter: drop-shadow(0 3px 0 var(--primary));
+
+        @media #{$xl} {
+            grid-template-columns: 1fr 410px;
+        }
+
+        @media #{$lg} {
+            grid-template-columns: 1fr;
+            padding: 40px 34px;
+
+        }
+
+        @media #{$sm} {
+            padding: 30px 24px;
+
+        }
+
+    }
+
+    .form-thumb {
+        border-radius: 16px;
+        overflow: hidden;
+
+        @media #{$lg} {
+            aspect-ratio: 100/60;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .section-title {
+        @media (min-width:992px) {
+            font-size: 40px;
+        }
+    }
+
+    .contact-wrap {
+        margin-top: 30px;
+    }
+}

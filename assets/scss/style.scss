@@ -2995,4 +2995,74 @@ span.section-subtitle {
     .contact-wrap {
         margin-top: 30px;
     }
+
+    .contact-meta-box {
+        margin-top: 40px;
+    }
+
+    .contact-meta {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+
+        @media #{$lg} {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        @media #{$md} {
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+    }
+
+    .contact-item {
+        border: 1px solid var(--primary);
+        border-radius: 20px;
+        background-color: var(--bg);
+        padding: 35px 50px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        filter: drop-shadow(0 3px 0 var(--primary));
+
+        @media #{$xs} {
+            padding: 24px 24px;
+            display: grid;
+        }
+
+        .icon {
+            width: 65px;
+            height: 65px;
+            border: 1px solid var(--primary);
+            border-radius: 50%;
+            min-width: 65px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            i {
+                font-size: 25px;
+                color: var(--action);
+
+            }
+        }
+
+        .title {
+            font-size: 24px;
+            line-height: 1.33;
+            letter-spacing: -0.46px;
+        }
+
+        .text {
+            letter-spacing: -0.18px;
+            margin-top: 6px;
+
+            a {
+                &:hover {
+                    color: var(--action);
+                }
+            }
+        }
+    }
 }

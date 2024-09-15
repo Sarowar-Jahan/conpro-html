@@ -3066,3 +3066,15 @@ span.section-subtitle {
         }
     }
 }
+
+/* map area style  */
+.map-box {
+    iframe {
+        width: 100%;
+        aspect-ratio: 100/53;
+        border-radius: 16px;
+        overflow: hidden;
+        outline: none;
+        border: 0;
+    }
+}

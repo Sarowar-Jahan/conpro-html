@@ -337,39 +337,9 @@
 
   }
 
-  function mousemoveHandler(e) {
-    try {
-      const target = e.target;
-
-      let tl = gsap.timeline({
-        defaults: {
-          x: e.clientX,
-          y: e.clientY,
-        }
-      })
-
-      // Main Cursor Moving 
-      tl.to(".cursor1", {
-        ease: "power2.out"
-      })
-        .to(".cursor2", {
-          ease: "power2.out"
-        }, "-=0.4")
-
-    } catch (error) {
-      console.log(error)
-    }
-  }
-  document.addEventListener("mousemove", mousemoveHandler);
 
 
-  // Cursor Default
-  // setTimeout(cursorDefaultHide, 1000);
 
-  function cursorDefaultHide() {
-    var cursor_default_hide = document.querySelector('.wc-cursor');
-    cursor_default_hide.style.display = "none";
-  }
 
   // 12. Image Reveal Animation
   let img_anim_reveal = document.querySelectorAll(".img_anim_reveal");
@@ -417,99 +387,13 @@
 
 
 
-  // 16. Switcher JS
-  var available = $('#switcher_open').on('click', function () {
-    $(this).hide();
-    $('#switcher_close').show();
-    $('.switcher__icon').css('right', '280px');
-    $('.switcher__items').css({
-      'right': '0',
-    });
-    overlay.classList.add('show-overlay');
-  });
-
-  var closeicon = $('#switcher_close').on('click', function () {
-    $(this).hide();
-    $('#switcher_open').show();
-    $('.switcher__icon').css('right', '0');
-    $('.switcher__items').css({
-      'right': '-280px',
-    });
-    overlay.classList.remove('show-overlay');
-  });
-
-  $('.overlay-switcher-close').on('click', function () {
-    available.hide();
-    closeicon.hide();
-
-    if (header_search) {
-      header_search.classList.remove('visible');
-      search_close.style.display = 'none';
-      search_icon.style.display = 'block';
-    }
-
-    $('#switcher_open').show();
-    $('.switcher__icon').css('right', '0');
-    $('.switcher__items').css({
-      'right': '-280px',
-    });
-    overlay.classList.remove('show-overlay');
-
-  });
 
 
 
-  // Mode JS
-  $('.mode-type button').on('click', function (e) {
-    $(this).addClass('active').siblings().removeClass('active');
-
-    var mode_val = $('.mode-type button.active').attr('data-mode');
-    if (mode_val == 'dark') {
-      $('body').addClass('dark');
-    } else {
-      $('body').removeClass('dark');
-    }
-  });
-
-  // Layout JS
-  $('.layout-type button').on('click', function (e) {
-    $(this).addClass('active').siblings().removeClass('active');
-
-    var mode_val = $('.layout-type button.active').attr('data-mode');
-    if (mode_val == 'box-layout') {
-      $('#smooth-content').addClass('box-layout');
-    } else {
-      $('#smooth-content').removeClass('box-layout');
-    }
-  });
-
-  // Language JS
-  $('.lang_dir button').on('click', function (e) {
-    $(this).addClass('active').siblings().removeClass('active');
-
-    var dir_val = $('.lang_dir button.active').attr('data-mode');
-    if (dir_val == 'rtl') {
-      $('body').addClass('dir-rtl');
-    } else {
-      $('body').removeClass('dir-rtl');
-    }
-  });
 
 
 
-  // Cursor JS
 
-  $('#cursor_style').on('change', function () {
-    var cursor_val = $(this).val();
-
-    if (cursor_val == '1') {
-      $('.cursor1').hide();
-      $('.cursor2').hide();
-    } else {
-      $('.cursor1').show();
-      $('.cursor2').show();
-    }
-  });
 
 
   $("a[href='#top']").on('click', function () {

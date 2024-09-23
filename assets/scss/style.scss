@@ -2654,7 +2654,7 @@ span.section-subtitle {
 .service-details-area {
     &-inner {
         display: grid;
-        gap: 40px 30px;
+        gap: 50px 30px;
         grid-template-columns: 850px 1fr;
 
         @media #{$xl} {
@@ -3325,7 +3325,7 @@ span.section-subtitle {
 .blog-post-area {
     &-inner {
         display: grid;
-        gap: 40px 30px;
+        gap: 60px 30px;
         grid-template-columns: 850px 1fr;
 
         @media #{$xl} {
@@ -3515,6 +3515,11 @@ span.section-subtitle {
 
         &:not(:first-child) {
             margin-top: 50px;
+
+            @media #{$xl} {
+                margin-top: 40px;
+
+            }
 
             @media #{$lg} {
                 margin-top: 30px;
@@ -3713,6 +3718,11 @@ span.section-subtitle {
             overflow: hidden;
             margin-bottom: 26px;
 
+            @media #{$lg} {
+                padding: 6px 20px;
+                margin-top: -22px;
+            }
+
             span {
                 display: inline-flex;
                 gap: 10px;
@@ -3744,6 +3754,18 @@ span.section-subtitle {
             font-size: 40px;
             line-height: 1.2;
             letter-spacing: -0.88px;
+
+            @media #{$xl} {
+                font-size: 34px;
+            }
+
+            @media #{$lg} {
+                font-size: 30px;
+            }
+
+            @media #{$xs} {
+                font-size: 24px;
+            }
         }
 
         .text-wrapper {
@@ -3752,7 +3774,7 @@ span.section-subtitle {
             }
         }
 
-        h2.heading+.text-wrapper {
+        .heading+.text-wrapper {
             margin-top: 18px;
         }
 
@@ -3769,6 +3791,18 @@ span.section-subtitle {
             font-weight: 500;
             line-height: 1.33;
             letter-spacing: -0.88px;
+
+            @media #{$xl} {
+                font-size: 28px;
+            }
+
+            @media #{$lg} {
+                font-size: 24px;
+            }
+
+            @media #{$xs} {
+                font-size: 20px;
+            }
         }
 
         .heading-2+.text-wrapper {
@@ -3787,6 +3821,10 @@ span.section-subtitle {
             ul {
                 column-count: 2;
                 column-gap: 30px;
+
+                @media #{$sm} {
+                    columns: unset;
+                }
 
                 li {
                     font-size: 16px;
@@ -3818,6 +3856,14 @@ span.section-subtitle {
             justify-content: space-between;
             gap: 20px 30px;
             align-items: center;
+
+            @media #{$lg} {
+                flex-wrap: wrap;
+            }
+
+            @media #{$sm} {
+                padding: 22px 20px;
+            }
 
             .author {
                 font-size: 18px;
@@ -3868,6 +3914,10 @@ span.section-subtitle {
             font-weight: 500;
             line-height: 1.33;
             letter-spacing: -0.47px;
+
+            @media #{$xs} {
+                font-size: 20px;
+            }
         }
 
         .heading-3+.comment-box {
@@ -3890,12 +3940,22 @@ span.section-subtitle {
                 min-width: 95px;
                 border-radius: 50%;
                 overflow: hidden;
+
+                @media #{$lg} {
+                    width: 55px;
+                    height: 55px;
+                    min-width: 55px;
+                }
             }
 
             .name {
                 font-size: 18px;
                 line-height: 32px;
                 letter-spacing: -0.47px;
+
+                @media #{$xs} {
+                    font-size: 16px;
+                }
             }
 
             .date {
@@ -3911,10 +3971,18 @@ span.section-subtitle {
 
         .comments-wrapper {
             margin-top: 67px;
+
+            @media #{$xl} {
+                margin-top: 47px;
+            }
         }
 
         .comment-form-wrapper {
             margin-top: 76px;
+
+            @media #{$xl} {
+                margin-top: 46px;
+            }
 
             .text-wrapper {
                 margin-top: 2px;
@@ -3925,6 +3993,11 @@ span.section-subtitle {
             display: grid;
             gap: 30px 30px;
             grid-template-columns: repeat(2, 1fr);
+
+            @media #{$lg} {
+                gap: 20px 20px;
+
+            }
 
             @media #{$sm} {
                 grid-template-columns: repeat(1, 1fr);
@@ -3971,10 +4044,18 @@ span.section-subtitle {
 
         .submit-btn {
             margin-top: 30px;
+
+            @media #{$lg} {
+                margin-top: 20px;
+            }
         }
 
         .comment-wrap {
             margin-top: 35px;
+
+            @media #{$lg} {
+                margin-top: 25px;
+            }
         }
     }
 }

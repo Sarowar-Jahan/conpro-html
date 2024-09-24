@@ -28,14 +28,24 @@
 
 
   // 01. Sticky 
-  let header = document.querySelector('header');
+  let header = document.querySelector('.header-sticky');
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 500) {
+    if (window.scrollY > 150) {
       header.classList.add('sticky')
     } else {
       header.classList.remove('sticky')
     }
   })
+
+  // // Sticky Header Js
+  // windowOn.on("scroll", function () {
+  //   var scroll = $(window).scrollTop();
+  //   if (scroll < 100) {
+  //     $("#header-sticky").removeClass("sticky");
+  //   } else {
+  //     $("#header-sticky").addClass("sticky");
+  //   }
+  // });
 
 
   // Screen Width
@@ -51,6 +61,25 @@
         $(this).remove();
       });
     }
+  });
+
+
+  // Side Info Js
+  $(".side-info-close,.offcanvas-overlay").on("click", function () {
+    $(".side-info").removeClass("info-open");
+    $(".offcanvas-overlay").removeClass("overlay-open");
+  });
+  $(".side-toggle").on("click", function () {
+    $(".side-info").addClass("info-open");
+    $(".offcanvas-overlay").addClass("overlay-open");
+  });
+
+
+  // meanmenu activation 
+  $('.main-menu').meanmenu({
+    meanScreenWidth: "1199",
+    meanMenuContainer: '.mobile-menu',
+    meanMenuCloseSize: '28px',
   });
 
 
@@ -221,19 +250,8 @@
     });
   }
 
-  // 09. meanmenu active
-  $('.offcanvas__menu').meanmenu({
-    meanScreenWidth: "5000",
-    meanMenuContainer: '.offcanvas__menu-wrapper',
-    meanMenuCloseSize: '28px',
-  });
 
-  // meanmenu activition 
-  $('.main-menu').meanmenu({
-    meanScreenWidth: "1199",
-    meanMenuContainer: '.offcanvas__menu-wrapper',
-    meanMenuCloseSize: '28px',
-  });
+
 
 
 

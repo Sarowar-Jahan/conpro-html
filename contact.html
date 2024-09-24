@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="assets/vendor/progressbar.css">
   <link rel="stylesheet" href="assets/vendor/meanmenu.min.css">
   <link rel="stylesheet" href="assets/vendor/magnific-popup.css">
+  <link rel="stylesheet" href="assets/vendor/animate.min.css">
 
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="assets/css/style.css">
@@ -54,7 +55,43 @@
     </svg>
   </div>
 
-
+  <!-- side toggle start -->
+  <aside class="fix">
+    <div class="side-info">
+      <div class="side-info-content">
+        <div class="offset-widget offset-header">
+          <div class="offset-logo">
+            <a href="index.html">
+              <img src="assets/imgs/logo/logo.png" alt="site logo">
+            </a>
+          </div>
+          <button class="side-info-close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="mobile-menu d-xl-none fix"></div>
+        <div class="offset-widget-box">
+          <h2 class="title">Contact US</h2>
+          <div class="contact-meta">
+            <div class="contact-item">
+              <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+              <span class="text">3891 Ranchview Dr. Richardson</span>
+            </div>
+            <div class="contact-item">
+              <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+              <span class="text"><a href="mailto:bill.sanders@example.com">bill.sanders@example.com</a></span>
+            </div>
+            <div class="contact-item">
+              <span class="icon"><i class="fa-solid fa-phone"></i></span>
+              <span class="text"><a href="tel:(505)555-0125">(505) 555-0125</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="offcanvas-overlay"></div>
+  <!-- side toggle end -->
 
 
 
@@ -84,52 +121,63 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="header-area__inner">
-        <div class="header__logo">
-          <a href="index.html">
-            <img src="assets/imgs/logo/logo.png" class="normal-logo" alt="Site Logo">
-          </a>
-        </div>
-        <div class="header__nav pos-center">
-          <nav class="main-menu">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li class="menu-item-has-children">
-                <a href="#">Pages</a>
-                <ul class="dp-menu">
-                  <li><a href="integration.html">integration</a></li>
-                  <li><a href="integration-single.html">integration single</a></li>
-                  <li><a href="about.html">about</a></li>
-                  <li><a href="contact.html">contact</a></li>
-                  <li><a href="404.html">404</a></li>
-                  <li><a href="pricing.html">pricing</a></li>
-                  <li><a href="faq.html">faq</a></li>
-                  <li><a href="all-template.html">all templete</a></li>
-                  <li><a href="team.html">team page</a></li>
-                  <li><a href="privacy-policy.html">privacy policy</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Blog</a>
-                <ul class="dp-menu">
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="blog-details.html">Blog Details</a></li>
-                </ul>
-              </li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header__button">
-          <a href="about.html" class="t-btn t-btn-primary btn-text-flip"> <span data-text="Learn More">Learn
-              More</span> <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        <div class="header__navicon d-xl-none">
-          <button onclick="showCanvas3()" class="open-offcanvas">
-            <i class="fa-solid fa-bars"></i></button>
+    <div class="header-main header-sticky">
+      <div class="container">
+        <div class="header-area__inner">
+          <div class="header__logo">
+            <a href="index.html">
+              <img src="assets/imgs/logo/logo.png" class="normal-logo" alt="Site Logo">
+            </a>
+          </div>
+          <div class="header__nav pos-center">
+            <nav class="main-menu">
+              <ul>
+                <li class="menu-item-has-children">
+                  <a href="index.html">Home</a>
+                  <ul class="dp-menu">
+                    <li><a href="index.html">Demo 01</a></li>
+                    <li><a href="index-02.html">Demo 02</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="index.html">Service</a>
+                  <ul class="dp-menu">
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="service-details.html">Service Details</a></li>
+                  </ul>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="menu-item-has-children">
+                  <a href="#">Blog</a>
+                  <ul class="dp-menu">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog-details.html">Blog Details</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Pages</a>
+                  <ul class="dp-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="service-details.html">Service Details</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="project-details.html">Project Details</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog-details.html">Blog Details</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__button">
+            <a href="about.html" class="t-btn t-btn-primary btn-text-flip"> <span data-text="Learn More">Learn
+                More</span> <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="header__navicon d-xl-none">
+            <button class="side-toggle">
+              <i class="fa-solid fa-bars"></i></button>
+          </div>
         </div>
       </div>
     </div>
@@ -298,7 +346,7 @@
                   </div>
                 </div>
                 <div class="footer-widget-box">
-                  <h2 class="title">Contect US</h2>
+                  <h2 class="title">Contact US</h2>
                   <div class="contact-meta">
                     <div class="contact-item">
                       <span class="icon"><i class="fa-solid fa-location-dot"></i></span>

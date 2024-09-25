@@ -20,8 +20,8 @@
       border-radius: 50%;
       height: 9em;
       width: 9em;
-      border: 10px solid var(--white);
-      border-top-color: var(--primary);
+      border: 10px solid var(--primary);
+      border-top-color: var(--white);
       margin: 0 auto 3.5em auto;
 
       @media #{$sm} {
@@ -82,7 +82,7 @@
   }
 
   .loader-section {
-    background-color: var(--black);
+    background-color: var(--white);
     height: 100%;
     position: fixed;
     top: 0;

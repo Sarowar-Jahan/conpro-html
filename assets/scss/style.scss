@@ -680,6 +680,10 @@
             @media #{$sm} {
                 justify-content: center;
             }
+
+            a:hover {
+                color: var(--action);
+            }
         }
     }
 
@@ -723,6 +727,12 @@
                 border-radius: 50%;
                 color: var(--primary);
             }
+
+            .text {
+                a:hover {
+                    color: var(--action);
+                }
+            }
         }
     }
 
@@ -739,8 +749,17 @@
                 align-items: center;
                 gap: 15px;
 
+                &:hover {
+                    color: var(--action);
+
+                    i {
+                        color: var(--action);
+                    }
+                }
+
                 i {
                     color: var(--primary);
+                    transition: all 0.3s;
                 }
             }
         }
@@ -868,6 +887,10 @@
             @media #{$sm} {
                 justify-content: center;
             }
+
+            a:hover {
+                color: var(--action);
+            }
         }
     }
 
@@ -904,6 +927,12 @@
                 align-items: center;
                 border-radius: 50%;
                 color: var(--primary);
+            }
+
+            .text {
+                a:hover {
+                    color: var(--action);
+                }
             }
         }
     }
@@ -946,8 +975,17 @@
                 align-items: center;
                 gap: 15px;
 
+                &:hover {
+                    color: var(--action);
+
+                    i {
+                        color: var(--action);
+                    }
+                }
+
                 i {
                     color: var(--primary);
+                    transition: all 0.3s;
                 }
             }
         }

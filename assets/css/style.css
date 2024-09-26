@@ -3724,6 +3724,9 @@ FEATURES STYLES 3
   font-weight: 400;
   text-transform: uppercase;
 }
+.header-area .main-menu li a:hover {
+  color: var(--action);
+}
 .header-area .search-icon {
   color: var(--primary);
 }

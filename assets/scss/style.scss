@@ -1256,10 +1256,16 @@
         background-color: var(--bg);
         filter: drop-shadow(0px 3px 0px var(--primary));
         margin-top: 40px;
+        transition: all 0.3s;
 
         @media #{$xl} {
             padding: 0 30px 28px;
 
+        }
+
+
+        &:hover {
+            transform: translateY(-5px);
         }
 
         .icon {
@@ -1353,6 +1359,7 @@
         padding: 40px 40px;
         background-color: var(--bg);
         box-shadow: 0px 3px 0px var(--primary);
+        transition: all 0.3s;
 
         @media #{$xl} {
             padding: 30px 30px;
@@ -1362,6 +1369,10 @@
         @media #{$lg} {
             padding: 20px 20px;
 
+        }
+
+        &:hover {
+            transform: translateY(-5px);
         }
 
         .icon {
@@ -2179,6 +2190,10 @@
         .name {
             font-size: 24px;
             line-height: 1.33;
+
+            a:hover {
+                color: var(--action);
+            }
         }
 
         .post {
@@ -2196,6 +2211,10 @@
             a {
                 font-size: 14px;
                 color: #111111;
+
+                &:hover {
+                    color: var(--action);
+                }
             }
         }
 
@@ -2292,6 +2311,10 @@
         .name {
             font-size: 24px;
             line-height: 1.33;
+
+            a:hover {
+                color: var(--action);
+            }
         }
 
         .post {
@@ -2387,6 +2410,10 @@
                     transform: scale(1.1);
                 }
             }
+
+            .title {
+                color: var(--action)
+            }
         }
 
         .thumb {
@@ -2423,6 +2450,8 @@
             font-size: 40px;
             line-height: 1.2;
             margin-top: 22px;
+            transition: all 0.5s;
+
 
             @media #{$xl} {
                 font-size: 32px;
@@ -2564,6 +2593,10 @@
                     transform: scale(1.1);
                 }
             }
+
+            .title {
+                color: var(--action);
+            }
         }
 
         .thumb {
@@ -2580,6 +2613,8 @@
         .title {
             font-size: 24px;
             line-height: 1.33;
+            transition: all 0.5s;
+
 
             @media #{$lg} {
                 font-size: 22px;
@@ -3227,6 +3262,11 @@
                     align-items: center;
                     filter: drop-shadow(0px 3px 0px var(--primary));
                     background-color: var(--bg);
+                    transition: all 0.3s;
+
+                    &:hover {
+                        transform: translateY(-2px);
+                    }
 
                     &.active {
                         background-color: var(--action);
@@ -3770,14 +3810,24 @@
             border-radius: 16px 16px 0 0;
             overflow: hidden;
 
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+
             img {
                 width: 100%;
+                transition: all 0.5s;
+
+
             }
 
             .meta-date {
                 position: absolute;
                 right: 30px;
                 top: 30px;
+                z-index: 1;
 
                 @media #{$sm} {
                     right: 15px;
@@ -3858,6 +3908,10 @@
 
             @media #{$xs} {
                 font-size: 22px;
+            }
+
+            a:hover {
+                color: var(--action);
             }
         }
 
@@ -3956,6 +4010,10 @@
                     display: flex;
                     gap: 10px;
                     justify-content: space-between;
+
+                    &:hover {
+                        color: var(--action);
+                    }
                 }
             }
         }
@@ -3992,10 +4050,18 @@
                     min-width: 80px;
                 }
 
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    transition: all 0.5s;
+
                 }
             }
 
@@ -4025,6 +4091,10 @@
                     margin-top: 5px;
 
                 }
+
+                a:hover {
+                    color: var(--action);
+                }
             }
         }
 
@@ -4043,6 +4113,11 @@
                 border: 1px solid #050505;
                 padding: 4px 13px;
                 border-radius: 30px;
+
+                &:hover {
+                    color: var(--white);
+                    background-color: var(--action);
+                }
             }
         }
     }

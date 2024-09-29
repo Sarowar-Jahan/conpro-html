@@ -3652,14 +3652,14 @@
 
             &:hover {
                 .icon {
-                    background-color: #51AC5A;
+                    background-color: var(--action);
                     color: #F7F7F7;
                 }
             }
 
             .icon {
                 font-size: 16px;
-                color: #51AC5A;
+                color: var(--action);
                 width: 40px;
                 height: 40px;
                 background-color: #F7F7F7;
